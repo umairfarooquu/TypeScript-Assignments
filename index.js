@@ -430,3 +430,61 @@ if (alien_color === "yellow") {
 if (alien_color === "red") {
     console.log("the player just earned 15 points");
 }
+// Q28
+console.log("\nQuestion Number 28\n");
+/*
+Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+
+• If the person is less than 2 years old, print a message that the person is a baby.
+
+• If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
+
+• If the person is at least 4 years old but less than 13, print a message that the person is a kid.
+
+• If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
+
+• If the person is at least 20 years old but less than 65, print a message that the person is an adult.
+
+• If the person is age 65 or older, print a message that the person is an elder. */
+let personAge = 10;
+if (personAge < 2) {
+    console.log("the person is a baby");
+}
+else if (personAge <= 2 || personAge < 4) {
+    console.log("the person is a toddler");
+}
+else if (personAge <= 4 || personAge < 13) {
+    console.log("the person is a kid");
+}
+else if (personAge <= 13 || personAge < 20) {
+    console.log("the person is a teenager");
+}
+else if (personAge <= 20 || personAge < 65) {
+    console.log("the person is a adult");
+}
+else if (personAge === 65 || personAge > 65) {
+    console.log("the person is a adult");
+}
+// Q29
+console.log("\nQuestion Number 29\n");
+/*
+Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent
+if statements that check for certain fruits in your array.
+• Make a array of your three favorite fruits and call it favorite_fruits.
+• Write five if statements. Each should check whether a certain kind of fruit is in your array.
+If the fruit is in your array, the if block should print a statement, such as You really like bananas! */
+let favFruits = ["bnana", "apple", "grapes", "orange"];
+let checkFruit = "bnana";
+let check = false;
+for (let b = 0; b < favFruits.length; b++) {
+    if (favFruits[b] === checkFruit) {
+        check = true;
+        break;
+    }
+}
+if (check) {
+    console.log("my favorite friut is in array");
+}
+else {
+    console.log("my favorite friut is not in array");
+}
