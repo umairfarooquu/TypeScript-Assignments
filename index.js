@@ -223,7 +223,7 @@ let popularCities = ["Lahore", "Islamabad", "Karachi", "Multan"];
 for (const cities of popularCities) {
     console.log(`Pakistan Popular Cities is: ${cities}`);
 }
-// Q20
+// Q21
 console.log("\nQuestion Number 21\n");
 const favoriteCars = [
     { Model_Year: 2022, Company_Make: "Honda", Engine: "Auto" },
@@ -234,5 +234,199 @@ for (const cars of favoriteCars) {
     console.log(`Model Year: ${cars.Model_Year}`);
     console.log(`Company Make: ${cars.Company_Make}`);
     console.log(`Engine:${cars.Engine}`);
-    console.log("-----------------------------");
+    console.log("!---------------------------!");
+}
+// Q22
+console.log("\nQuestion Number 22\n");
+/*Intentional Error: If you haven’t received an array index error in one of your programs yet,
+try to make one happen. Change an index in one of your programs to produce an index error.
+Make sure you correct the error before closing the program.*/
+let bestLaptops = ["Lenovo", "HP", "Dell", "Asus"];
+console.log(`One of the best laptop is ${bestLaptops[0]}`);
+bestLaptops[6] = "Yoga";
+console.log(`One of the best laptop is ${bestLaptops[6]}`);
+/* That is Intentionaly error we create as we know our Array have 3 index data and we put data on index 6
+an there are 2 index that are empty and no data existed after on index 6 we have "Yoga" and when we print data
+its will show you on index 6 but on 4 and 5 no data will be shown.
+*/
+console.log(`One of the best laptop is ${bestLaptops[5]}`); //
+console.log(`One of the best laptop is ${bestLaptops[4]}`); //
+// Q23
+console.log("\nQuestion Number 23\n");
+/*Conditional Tests: Write a series of conditional tests. Print a statement describing
+each test and your prediction for the results of each test.
+Your code should look something like this:
+
+let car = 'subaru';
+
+console.log("Is car == 'subaru'? I predict True.")
+
+console.log(car == 'subaru')
+
+• Look closely at your results, and make sure you understand why each line evaluates to True or False.
+
+• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.*/
+let car = "subaru";
+console.log("Is car == 'subaru'? I predict True.");
+console.log(car == "subaru");
+//01==True
+let car1 = "Honda";
+console.log("Is car == 'Honda'? I predict True.");
+console.log(car1 == "Honda");
+//02==True
+let car2 = "Suzuki";
+console.log("Is car == 'Suzuki'? I predict True.");
+console.log(car2 == "Suzuki");
+//03==True
+let car3 = "Huandai";
+console.log("Is car == 'Huandai'? I predict True.");
+console.log(car3 == "Huandai");
+//04==True
+let car4 = "BMW";
+console.log("Is car == 'BMW'? I predict True.");
+console.log(car4 == "BMW");
+//05==True
+let car5 = "Master";
+console.log("Is car == 'Master'? I predict True.");
+console.log(car5 == "Master");
+//06==False
+let car6 = "Master";
+console.log("Is car == 'Master'? I predict True.");
+console.log(car6 == "Suzuki");
+//07==False
+let car7 = "Chevorlet";
+console.log("Is car == 'Master'? I predict True.");
+console.log(car7 == "Suzuki");
+//08==False
+let car8 = "Chevorlet";
+console.log("Is car == 'Master'? I predict True.");
+console.log(car7 == "Suzuki");
+//09==False
+let car9 = "Chevorlet";
+console.log("Is car == 'Master'? I predict True.");
+console.log(car7 == "Suzuki");
+//10==False
+let car10 = "Chevorlet";
+console.log("Is car == 'Master'? I predict True.");
+console.log(car7 == "Suzuki");
+// Q24
+console.log("\nQuestion Number 24\n");
+/*More Conditional Tests: You don’t have to limit the number of tests you create to 10.
+If you want to try more comparisons, write more tests.
+Have at least one True and one False result for each of the following:
+
+• Tests for equality and inequality with strings
+• Tests using the lower case function
+• Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+• Tests using "and" and "or" operators
+• Test whether an item is in a array
+• Test whether an item is not in a array*/
+//01- Tests for equality and inequality with strings
+let cat = "persian";
+console.log("I think cat=='ordinary' Let check this");
+console.log(cat == "ordinary");
+console.log("Is cat=='persian'? I think again let check this..");
+console.log(cat == "persian");
+//02- Tests using the lower case function
+let uName = "UMAIR FAROOQ";
+console.log("Is Name in lowercase 'umair farooq'? I predict True.");
+console.log(uName == uName.toLowerCase());
+console.log("Is Name in Upper Case 'umair farooq'? I predict false.");
+console.log(uName == uName.toUpperCase());
+console.log(`Finally we got this is ${uName == uName.toUpperCase()}, this is in Upper Case`);
+//03- Numerical tests involving equality and inequality, greater than and less than,
+//greater than or equal to, and less than or equal to
+let number1 = 60;
+let number2 = 90;
+console.log("the number1 is less than number2. let me check this");
+console.log(number1 < number2);
+console.log("the number1 is greater than number2. let me check this");
+console.log(number1 > number2);
+console.log("the number1 is less equal to number2. let me check this");
+console.log(number1 <= number2);
+console.log("the number1 is greater than equal to number2. let me check this");
+console.log(number1 >= number2);
+//04- Tests using "and" and "or" operators
+let isHot = true;
+let isWarm = false;
+console.log("Is it Hot or Warm, I predict true");
+console.log(isHot && isWarm);
+console.log("Is it Hot or Warm, I predict false");
+console.log(isHot || isWarm);
+//05- Test whether an item is in a array
+let itemInArray = false;
+const myArray = ["Murree", "Kashmir", "Karachi", "Lahore"];
+for (let i = 0; i <= myArray.length; i++) {
+    if (myArray[i] == "Lahore") {
+        itemInArray = true;
+        break;
+    }
+}
+//05- Test whether an item is in a array or not
+if (itemInArray) {
+    console.log("Searching Item in Array");
+}
+else {
+    console.log("Searching Item not in Array");
+}
+// Q25
+console.log("\nQuestion Number 25\n");
+/*Alien Colors #1: Imagine an alien was just shot down in a game.
+Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+• Write an if statement to test whether the alien’s color is green.
+If it is, print a message that the player just earned 5 points.
+• Write one version of this program that passes the if test and another that fails.
+(The version that fails will have no output.)*/
+let alien_color = "green";
+let test_color = "green";
+if (alien_color === test_color) {
+    console.log("the player just earned 5 points");
+}
+//Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
+let test_colorother = "red";
+if (alien_color === test_color) {
+}
+// Q26
+console.log("\nQuestion Number 26\n");
+/*
+Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+• If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+
+• If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+
+• Write one version of this program that runs the if block and another that runs the else block.*/
+if (alien_color === test_color) {
+    console.log("the player just earned 5 points");
+}
+else {
+    console.log("the player just earned 10 points");
+}
+if (alien_color != test_color) {
+    console.log("the player just earned 15 points");
+}
+else {
+    console.log("the player just earned 20 points");
+}
+// Q27
+console.log("\nQuestion Number 27\n");
+/*
+Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+• If the alien is green, print a message that the player earned 5 points.
+
+• If the alien is yellow, print a message that the player earned 10 points.
+
+• If the alien is red, print a message that the player earned 15 points.
+
+• Write three versions of this program, making sure each message is printed for the appropriate color alien.*/
+//01- If the alien is green, print a message that the player earned 5 points.
+if (alien_color === test_color) {
+    console.log("the player just earned 5 points");
+}
+//02- If the alien is yellow, print a message that the player earned 10 points.
+if (alien_color === "yellow") {
+    console.log("the player just earned 10 points");
+}
+//03- If the alien is red, print a message that the player earned 15 points.
+if (alien_color === "red") {
+    console.log("the player just earned 15 points");
 }
