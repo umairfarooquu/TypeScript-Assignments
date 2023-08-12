@@ -289,7 +289,7 @@ for (const cities of popularCities) {
   console.log(`Pakistan Popular Cities is: ${cities}`);
 }
 
-// Q20
+// Q21
 console.log("\nQuestion Number 21\n");
 /*They think of something you could store in a TypeScript Object. 
 Write a program that creates Objects containing these items.*/
@@ -307,5 +307,5 @@ for (const cars of favoriteCars) {
   console.log(`Model Year: ${cars.Model_Year}`);
   console.log(`Company Make: ${cars.Company_Make}`);
   console.log(`Engine:${cars.Engine}`);
-  console.log("-----------------------------");
+  console.log("!---------------------------!");
 }
